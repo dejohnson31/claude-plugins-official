@@ -1,0 +1,18 @@
+{
+  "ring": {
+    "email": "your-ring-email@example.com",
+    "password": "your-ring-password",
+    "refreshToken": ""
+  },
+  "blink": {
+    "email": "your-blink-email@example.com",
+    "password": "your-blink-password"
+  },
+  "server": {
+    "port": 3000,
+    "snapshotInterval": {
+      "ring": 1500,
+      "blink": 6000
+    }
+  }
+}

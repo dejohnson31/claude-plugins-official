@@ -112,10 +112,11 @@ Cameras can be added or removed by editing this file — no code changes needed.
 
 ---
 
-## Open Decisions
+## Decisions Made
 
-- [ ] Ring streams: **True HLS live video** (requires FFmpeg/go2rtc) or **snapshot-refresh** like Blink?
-- [ ] Where will this run: local machine, home server/Pi, or cloud hosting?
+- [x] Ring streams: **Near-live snapshot push via WebSocket** (1.5s interval) — upgradeable to true HLS with go2rtc
+- [x] Blink streams: **Snapshot refresh via WebSocket** (6s interval, limited by Blink API)
+- [x] Deployment: **Local home network machine** (accessed via `http://localhost:3000`)
 
 ---
 
